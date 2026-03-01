@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy Pals - Pakaian Trendy & Nyaman</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Pengaturan Dasar & Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        body { background-color: #f9f9f9; color: #333; line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+        
+        /* Navigasi */
+        header { background-color: #fff; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .logo { font-size: 24px; font-weight: 700; color: #111; }
+        .nav-links a { margin-left: 20px; font-weight: 600; font-size: 14px; transition: color 0.3s; }
+        .nav-links a:hover { color: #ff6b6b; }
+
+        /* Tombol Umum */
+        .btn { padding: 10px 25px; background-color: #111; color: #fff; border-radius: 5px; font-weight: 600; transition: background 0.3s; display: inline-block; }
+        .btn:hover { background-color: #ff6b6b; }
+        .btn-wa { background-color: #25D366; color: white; }
+        .btn-wa:hover { background-color: #1ebd57; }
+
+        /* Hero Section (Beranda) */
+        .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover; color: #fff; padding: 0 20px; }
+        .hero h1 { font-size: 3rem; margin-bottom: 15px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 25px; max-width: 600px; }
+
+        /* Section Global */
+        section { padding: 80px 5%; text-align: center; }
+        .section-title { font-size: 2rem; margin-bottom: 10px; color: #111; }
+        .section-subtitle { color: #666; margin-bottom: 50px; }
+
+        /* Keunggulan */
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .feature-card { background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .feature-icon { font-size: 2.5rem; margin-bottom: 15px; }
+
+        /* Katalog Produk */
+        .products { background-color: #fff; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .product-card { border: 1px solid #eee; border-radius: 10px; overflow: hidden; transition: transform 0.3s; background: #fff; }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .product-img { width: 100%; height: 300px; object-fit: cover; }
+        .product-info { padding: 20px; text-align: left; }
+        .product-info h3 { font-size: 1.2rem; margin-bottom: 10px; }
+        .product-price { color: #ff6b6b; font-weight: 700; margin-bottom: 15px; }
+
+        /* Cara Pesan */
+        .steps { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-bottom: 40px; }
+        .step-box { background: #fff; padding: 20px; width: 250px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .step-num { background: #111; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-weight: bold; margin: 0 auto 15px auto; font-size: 1.2rem; }
+
+        /* Footer */
+        footer { background-color: #111; color: #fff; padding: 40px 5%; text-align: center; }
+        .footer-content { margin-bottom: 20px; }
+        .footer-content p { color: #aaa; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Crazy Pals</div>
+        <div class="nav-links">
+            <a href="#hero">Beranda</a>
+            <a href="#tentang">Tentang Kami</a>
+            <a href="#katalog">Katalog</a>
+            <a href="#pesan">Cara Pesan</a>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <h1>Gaya Ekspresif, Kualitas Eksklusif</h1>
+        <p>Temukan koleksi pakaian terkini yang dirancang untuk kenyamanan aktivitas harian Anda. Tampil percaya diri setiap saat.</p>
+        <a href="#katalog" class="btn">Lihat Koleksi Kami</a>
+    </section>
+
+    <section id="tentang">
+        <h2 class="section-title">Mengapa Memilih Kami?</h2>
+        <p class="section-subtitle">Komitmen kami untuk gaya dan kenyamanan Anda</p>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <h3>Desain Terkini</h3>
+                <p>Koleksi selalu update dengan tren fesyen terbaru yang cocok untuk berbagai kalangan.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🧵</div>
+                <h3>Material Premium</h3>
+                <p>Menggunakan bahan pilihan yang sejuk, menyerap keringat, dan tahan lama.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">👌</div>
+                <h3>Jahitan Presisi</h3>
+                <p>Detail jahitan yang rapi dan kuat untuk memastikan kualitas pakaian terbaik.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="katalog" class="products">
+        <h2 class="section-title">Katalog Produk</h2>
+        <p class="section-subtitle">Pilihan gaya terbaik untuk melengkapi hari Anda</p>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="T-Shirt Oversize" class="product-img">
+                <div class="product-info">
+                    <h3>T-Shirt Oversize Basic</h3>
+                    <p class="product-price">Rp 125.000</p>
+                    <a href="https://wa.me/628125544888?text=Halo%20Crazy%20Pals,%20saya%20tertarik%20dengan%20T-Shirt%20Oversize%20Basic" target="_blank" class="btn btn-wa">Pesan via WhatsApp</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Jaket Denim" class="product-img">
+                <div class="product-info">
+                    <h3>Jaket Denim Classic</h3>
+                    <p class="product-price">Rp 285.000</p>
+                    <a href="https://wa.me/628125544888?text=Halo%20Crazy%20Pals,%20saya%20tertarik%20dengan%20Jaket%20Denim%20Classic" target="_blank" class="btn btn-wa">Pesan via WhatsApp</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Kemeja Flanel" class="product-img">
+                <div class="product-info">
+                    <h3>Kemeja Flanel Casual</h3>
+                    <p class="product-price">Rp 195.000</p>
+                    <a href="https://wa.me/628125544888?text=Halo%20Crazy%20Pals,%20saya%20tertarik%20dengan%20Kemeja%20Flanel%20Casual" target="_blank" class="btn btn-wa">Pesan via WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pesan">
+        <h2 class="section-title">Cara Pemesanan</h2>
+        <p class="section-subtitle">Belanja aman dan mudah melalui WhatsApp</p>
+        <div class="steps">
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <h3>Pilih Produk</h3>
+                <p>Pilih model dan ukuran pakaian yang Anda inginkan dari katalog kami.</p>
+            </div>
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <h3>Hubungi Admin</h3>
+                <p>Klik tombol WhatsApp pada produk untuk mengecek ketersediaan stok.</p>
+            </div>
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <h3>Pembayaran</h3>
+                <p>Lakukan pembayaran dan pesanan Anda akan segera kami proses & kirim.</p>
+            </div>
+        </div>
+        <a href="https://wa.me/628125544888" target="_blank" class="btn btn-wa" style="font-size: 1.2rem; padding: 15px 30px;">Chat Admin Sekarang</a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h2>Crazy Pals</h2>
+            <p>Gaya Kekinian, Kualitas Eksklusif.</p>
+            <p>WhatsApp: 0812-5544-888 | Email: hello@crazypals.com</p>
+        </div>
+        <div style="border-top: 1px solid #333; padding-top: 20px; color: #666; font-size: 0.9rem;">
+            &copy; 2020 Crazy Pals. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
